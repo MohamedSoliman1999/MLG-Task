@@ -6,7 +6,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT%20-yellow.svg)]()
 [![Language](https://img.shields.io/badge/Language-Kotlin%20-red.svg)]()
-[![Android](https://img.shields.io/badge/Platform-Native%20Android-green.svg)](https://developer.android.com/kot
+[![Android](https://img.shields.io/badge/Platform-Native%20Android-green.svg)](https://developer.android.com/kotlin)
 ![](header.png)
 
 ## 📱 Screenshots 
