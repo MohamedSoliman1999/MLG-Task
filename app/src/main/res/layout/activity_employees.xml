@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.employee.EmployeesActivity">
+    <EditText
+        android:id="@+id/department_name_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Department Name"/>
+    <EditText
+        android:id="@+id/employee_name_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/department_name_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="employee Name"/>
+    <EditText
+        android:id="@+id/hire_date_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/department_name_et"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Hire Date"/>
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/employee_name_et"
+        app:layout_constraintStart_toEndOf="@id/hire_date_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="email"/>
+
+    <Button
+        android:id="@+id/new_employee_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/email_et"
+        app:layout_constraintStart_toEndOf="@id/department_name_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="New Employee"/>
+    <ListView
+        android:id="@+id/employees_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="25dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/new_employee_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
